@@ -1,0 +1,50 @@
+Atribuição
+
+Segue a sintaxe básica da atribuição:
+<identificador> = <expressão>;
+
+A execução de uma atribuição sempre inicia pela computação da expressão após o símbolo de igualdade. Esta expressão pode ser 
+apenas um literal (valor fixo) ou uma expressão complexa que utilize operadores aritméticos, lógicos, relacionais e/ou chamadas de funções. 
+Podemos alterar a precedência dos operadores, na computação da expressão, com parênteses. Diferentemente da matemática, não dispomos de chaves 
+ou colchetes para esta finalidade. Dispomos apenas de parênteses. Apenas o resultado da computação da expressão, o valor resultante, é salvo na 
+variável indicada à esquerda. Outra opção de atribuição:
+
+<identificador> += <expressão>;
+
+Isso é o mesmo que:
+
+<identificador> = <identificador> + <expressão>;
+
+Neste tipo de atribuição é possível utilizar qualquer operador aritmético binário. Há, ainda, outras opções de atribuição. 
+
+<identificador>++;
+
+ou 
+
+++<identificador>;
+
+Ao executar uma linha de código apenas com uma destas instruções terá o mesmo efeito. A variável numérica indicada por identificador 
+será incrementada de uma unidade. Há variações com --, que fará o decremento de uma unidade. E é possível também utilizar ++ ou -- como 
+operador unário dentro de uma expressão. Neste caso, se o operador estiver prefixado o incremento/decremento será realizado antes da computação 
+da expressão. De toda forma, a variável indicada terá o seu valor incrementado/decrementado, ao final da execução da linha de código.
+
+
+Saída
+
+A seguinte linha de comando é utilizada para escrever algo na tela.
+
+console.log(<texto>);
+
+Vale lembrar que + é o operador aritmético de soma binária, mas, quando um dos operandos é uma string, passa a ser um operador de concatenação.
+Por exemplo, se resultado é uma variável numérica com algum resultado para saída, podemos escrever:
+
+console.log(“O resultado da operação é ” + resultado);
+
+Eu, particularmente, prefiro fazer uso de template string e escrever a saída de uma vez, sem concatenações.
+
+console.log(`O resultado da operação é ${resultado}.`); 
+
+Se temos uma variável numérica com um valor real, podemos controlar o número de casas decimais na saída com
+ toFixed(<casas-decimais>). Por exemplo, a seguinte saída exibirá resultado com 2 casas decimais:
+
+console.log(`O resultado da operação é ${resultado.toFixed(2)}.`); 
